@@ -20,7 +20,6 @@ test {
     useJUnitPlatform()
 }
 
-
 jmh {
     includes = ['org.example.lrucache.PutsAndGetsBench']
 }
