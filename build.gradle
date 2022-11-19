@@ -16,7 +16,11 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
 }
 
-
 test {
     useJUnitPlatform()
+}
+
+
+jmh {
+    includes = ['org.example.lrucache.PutsAndGetsBench']
 }
