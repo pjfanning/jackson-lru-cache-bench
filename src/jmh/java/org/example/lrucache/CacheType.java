@@ -18,7 +18,7 @@ package org.example.lrucache;
 import java.util.Map;
 
 /**
- * A factory for creating a {@link BasicCache} implementation.
+ * A factory for creating a {@link Map} implementation.
  *
  * @author ben.manes@gmail.com (Ben Manes)
  */
