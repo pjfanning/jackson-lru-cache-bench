@@ -29,6 +29,7 @@ import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.TearDown;
+import org.openjdk.jmh.annotations.Warmup;
 
 /**
  * A benchmark that evaluates the read/write performance of a cache. The cache is pre-populated for
@@ -41,6 +42,7 @@ import org.openjdk.jmh.annotations.TearDown;
  * @author ben.manes@gmail.com (Ben Manes)
  */
 @State(Scope.Group)
+@Warmup(iterations = 3)
 @SuppressWarnings({"CanonicalAnnotationSyntax", "LexicographicalAnnotationAttributeListing",
         "PMD.JUnit4TestShouldUseAfterAnnotation", "PMD.MethodNamingConventions"})
 public class ConcurrentBench {
